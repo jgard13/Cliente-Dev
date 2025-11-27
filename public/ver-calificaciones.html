@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ver Calificaciones - CETI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+      body { background-color: #c5c5c5; font-family: Arial, sans-serif; }
+      .top-bar { background-color: #000; height: 70px; }
+      .header-section { background-color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+      .logo { max-width: 120px; }
+      .btn-custom { background-color: #3a3a3a; color: #fff; padding: 12px 30px; border: none; border-radius: 5px; font-size: 14px; margin-left: 10px; }
+      .btn-custom:hover { background-color: #2a2a2a; }
+      .section-title { font-size: 24px; font-weight: bold; margin: 30px 40px 20px 40px; }
+      .table-container { background-color: #d9d9d9; margin: 0 40px 40px 40px; padding: 30px; border-radius: 5px; }
+      .calificacion-card { background-color: #fff; margin-bottom: 20px; border-radius: 5px; overflow: hidden; cursor: pointer; }
+      .calificacion-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+      .card-header { padding: 20px 30px; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr 0.8fr; gap: 20px; align-items: center; font-weight: 600; font-size: 16px; }
+      .card-body { padding: 20px 30px; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr 0.8fr; gap: 20px; align-items: center; }
+      .calif-box { background-color: #d9d9d9; padding: 15px; text-align: center; border-radius: 3px; }
+      .calif-box-value { font-size: 20px; font-weight: bold; }
+      .status-bar { height: 30px; border-radius: 3px; width: 100%; }
+      .status-green { background-color: #4CAF50; }
+      .status-yellow { background-color: #ffeb3b; }
+      .status-red { background-color: #f44336; }
+      .status-black { background-color: #2b2b2b; }
+      .delete-icon {
+          font-size: 24px;
+          cursor: pointer;
+          color: #d00000;
+          transition: transform .1s ease;
+      }
+
+      .delete-icon:hover {
+          transform: scale(1.2);
+          color: #a30000;
+      }
+  </style>
+</head>
+<body>
+  <div class="top-bar"></div>
+  <div class="header-section">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/CETI_Logo.png/621px-CETI_Logo.png" alt="CETI Logo" class="logo">
+    <div>
+      <button class="btn-custom" id="btnAgregarCalificacion">AGREGAR CALIFICACION</button>
+    </div>
+  </div>
+
+  <div class="section-title">CALIFICACIONES</div>
+  <div class="table-container" id="calificacionesContainer"></div>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+.container-fluid{
+    background-color: rgb(217, 217, 217)
+}
+.contenedor-login{
+    max-width: 600px;  
+    background-color: white;
+    border-radius: 16px;
+    padding: 0px;
+    transform: scale(1.2);
+}
+.container-form{
+    padding: 24px;
+    margin: 5px;
+}
+.botonav{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    border-radius: 16px, 16px, 0, 0;
+    background-color: rgb(199, 199, 199);
+    color: black;
+
+}
+.botonav :hover{
+    color: black;
+}
+.botonav :active{
+    background-color: rgb(255, 255, 255);
+}
+.form-control{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    text-decoration-line: underline;
+    background-color: rgba(255, 255, 255, 0); 
+
+}
+.BotonInicio{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;     
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: gray;
+}
+
+.toggle-password i:hover {
+    color: black;
+}
